@@ -1,0 +1,6 @@
+﻿  ConsoleApplication1.cpp
+  Subject.cpp
+C:\Users\farha\Documents\GitHub\Second-oop-project\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(3,10): fatal error C1083: Cannot open include file: 'Subject.h': No such file or directory
+C:\Users\farha\Documents\GitHub\Second-oop-project\ConsoleApplication1\ConsoleApplication1\Subject.cpp(46,57): error C3867: 'Subject::Get_Studentmark': non-standard syntax; use '&' to create a pointer to member
+  Generating Code...
+C:\Users\farha\Documents\GitHub\Second-oop-project\ConsoleApplication1\ConsoleApplication1\Subject.cpp(46,57): error C2296: '+': illegal, left operand has type 'float (__thiscall Subject::* )(void)'
