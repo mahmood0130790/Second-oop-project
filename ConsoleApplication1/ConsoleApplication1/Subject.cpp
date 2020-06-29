@@ -4,38 +4,38 @@ void Subject::Set_Name(string name)
 {
 	Name = name;
 }
-	string Subject::Get_Name()
+string Subject::Get_Name()
 	{
 		return Name;
 	}
 
-	void Subject::Set_Fullmark(float fullmark)
+	void Subject::Set_Fullmark(int fullmark)
 	{
 		Full_mark = fullmark;
 	}
 
-	float Subject::Get_Fullmark()
+	int Subject::Get_Fullmark()
 	{
 		return Full_mark;
 	}
 
-	void Subject::Set_Studentmark(float studentmark)
+	void Subject::Set_Studentmarks(int studentmarks)
 	{
-		Studentmark = studentmark;
+		Studentmarks = studentmarks;
 	}
 
-	float Subject::Get_Studentmark()
+	int Subject::Get_Studentmarks()
 	{
-		return Studentmark;
+		return Studentmarks;
 	}
 
 	Subject::Subject()
 	{
 	}
 
-	Subject::Subject(string name, float fullmark, float studentmark)
+	Subject::Subject(string name, int fullmark, int studentmarks)
 	{
-		Name = name; Full_mark = fullmark; Studentmark = studentmark;
+		Name = name; Full_mark = fullmark; Studentmarks = studentmarks;
 	}
 
 	Subject Subject::operator+(Subject a)
@@ -43,6 +43,6 @@ void Subject::Set_Name(string name)
 		Subject Result;
 		Result.Set_Name(Name);
 		Result.Set_Fullmark(a.Get_Fullmark()+Full_mark);
-		Result.Set_Studentmark(a.Get_Studentmark + Studentmark);
+		Result.Set_Studentmarks(a.Get_Studentmarks() + Studentmarks);
 		return Result;
 	}

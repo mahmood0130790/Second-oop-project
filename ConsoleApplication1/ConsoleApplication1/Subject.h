@@ -5,20 +5,20 @@ using namespace std;
 class Subject
 {
 private:
-	string Name; float Full_mark, Studentmark;
+	string Name; int Full_mark, Studentmarks;
 
 public:
 	void Set_Name(string name);
 	string Get_Name();
 
-	void Set_Fullmark(float fullmark);
-	float Get_Fullmark();
+	void Set_Fullmark(int fullmark);
+	int Get_Fullmark();
 
-	void Set_Studentmark(float studentmark);
-	float Get_Studentmark();
+	void Set_Studentmarks(int studentmark);
+	int Get_Studentmarks();
 
 	Subject();
-	Subject(string name, float fullmark,float studentmark);
+	Subject(string name, int fullmark,int studentmarks);
 
 	Subject operator+(Subject a);
 
