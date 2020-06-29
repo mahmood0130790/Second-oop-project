@@ -42,7 +42,7 @@ string Subject::Get_Name()
 	{
 		Subject Result;
 		Result.Set_Name(Name);
-		Result.Set_Fullmark(a.Get_Fullmark()+Full_mark);
-		Result.Set_Studentmarks(a.Get_Studentmarks() + Studentmarks);
+		Result.Set_Fullmark(Full_mark);
+		Result.Set_Studentmarks(a.Get_Studentmarks() + Full_mark);
 		return Result;
 	}

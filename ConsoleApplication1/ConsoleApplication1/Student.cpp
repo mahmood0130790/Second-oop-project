@@ -32,12 +32,14 @@ void Student::Add_Subject()
 	cout <<"Enter full mark "<<endl;
 	cin >> FM;
 	Subjects[SC].Set_Fullmark(FM);
+
+	
 	
 	SFM = SFM + Subjects[SC].Get_Fullmark();
+	
 	SC++;
-
-
 }
+
 void Student:: Change_SubINFO() {
 	string s; int FM;
 	
